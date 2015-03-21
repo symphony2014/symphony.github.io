@@ -1,0 +1,35 @@
+
+<html>
+<head>
+    <style>
+        TD {
+            width: 100;
+        }
+    </style>
+    <script>
+function sync()
+{
+var lft = document.all("dvData").scrollLeft
+document.all("dvHeader").style.width=200+lft
+document.all("dvHeader").style.left= -lft
+}
+    </script>
+</head>
+<body>
+    <div id="dvHeader" style="position:absolute; left:0; top:0; height:50; width:200; overflow:hidden">
+        <table border=1 bgcolor=cyan width=1000 id="tblHeader">
+            <tr><td>title 1</td><td>title 2</td><td>title 3</td><td>title 4</td><td>title 5</td><td>title 6</td><td>title 7</td></tr>
+        </table>
+    </div>
+    <div id="dvData" style="position:absolute; left:0; top:30;height:80; width:200;overflow:auto" onscroll="sync()">
+        <table border=1 width=1000 name="tblData" id="tblData">
+            <tr><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td></tr>
+            <tr><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td></tr>
+            <tr><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td></tr>
+            <tr><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td></tr>
+            <tr><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td></tr>
+            <tr><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td><td>1000</td></tr>
+        </table>
+    </div>
+</body>
+</html> 
